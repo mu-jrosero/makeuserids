@@ -99,6 +99,16 @@ sort ids.1st | uniq -d > duplids
 #     dabrams
 #     jabrams2
 
+for each in ids.1st
+do
+grep $each duplids
+if [$each != duplids]
+then
+$each > ids.2nd
+elseif [$each == duplids]
+then
+$each   
+
 
 
 
